@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  position: relative;
+  font-family: 'Open Sans';
+  color: white;
+}
+
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  opacity: 1;
+  border: none;
+  background-color: #0e0066b7;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  white-space: nowrap;
+  border-radius: 1rem;
+}
+
+#tooltip.visible {
+  opacity: 1;
+}
+
+#states {
+  fill: none;
+  stroke: white;
+  pointer-events: none;
+}
+
+#title {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+}
+
+#description {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+}
+
+#legend {
+    color: black;
+}
+
+.tick {
+    font-family: 'Open Sans';
+}
