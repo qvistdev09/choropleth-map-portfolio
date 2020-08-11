@@ -1,5 +1,5 @@
 const w = 800,
-  h = 800;
+  h = 600;
 
 const containerDom = document.getElementById('container');
 
@@ -15,7 +15,7 @@ svg
   .text('United States Educational Attainment')
   .attr('text-anchor', 'middle')
   .attr('x', '50%')
-  .attr('y', h / 6.5);
+  .attr('y', 20);
 
 svg
   .append('text')
@@ -25,7 +25,7 @@ svg
   )
   .attr('text-anchor', 'middle')
   .attr('x', '50%')
-  .attr('y', h / 5.3);
+  .attr('y', 35);
 
 const tooltip = d3.select('#container').append('div').attr('id', 'tooltip');
 const tooltipText = tooltip.append('p').html('Tooltip text');
@@ -69,7 +69,7 @@ svg
   .attr('id', 'legend')
   .attr(
     'transform',
-    'translate(' + (w / 2 - w / 3 / 2) + ', ' + (h - 100) + ')'
+    'translate(' + (w / 2 - w / 3 / 2) + ', ' + (h - 20) + ')'
   )
   .append('g')
   .call(xAxis);
